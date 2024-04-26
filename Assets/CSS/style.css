@@ -5,6 +5,7 @@
   --beige: #b4aea0;
 
 }
+
 /* Font Family and background color is defined for the whole page  */
 body {
   font-family: Arial, sans-serif, 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif, monospace;
@@ -12,6 +13,7 @@ body {
   background-color: var(--beige);
 }
 
+/* Indents are given to make space for the aside content */
 .indent-1 {
   display: flex;
 }
@@ -22,6 +24,7 @@ body {
   justify-content: center;
   padding: 2px;
 }
+
 /* Header background and font color is defined  */
 header {
   display: flex;
@@ -32,6 +35,7 @@ header {
   color: #000;
 }
 
+/* Headers font sizes adjusted */
 h1 {
   font-size: 200%;
 }
@@ -41,7 +45,7 @@ h2 {
   font-size: 180%;
 }
 
-
+/* Recent picture placement */
 picture img {
   display: flex;
   max-width: 400px;
@@ -49,6 +53,7 @@ picture img {
   justify-content: center;
 }
 
+/* Navigation bar adjustments */
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -61,6 +66,7 @@ nav a {
   text-decoration: none;
 }
 
+/* Work section is adjusted */
 article {
   display: block;
   font-size: 18px;
@@ -98,14 +104,13 @@ article h2 {
 .img2 {
   height: 100%;
   width: 100%;
-  /* height: auto; */
   padding-bottom: 2px;
-  /* object-fit: fill; */
 }
 
+/* First child is made bigger than the rest*/
 .indent-2 .content:first-child .img2 {
-max-width: fill;
-max-height: fill;
+  max-width: fill;
+  max-height: fill;
 }
 
 .content:first-child {
@@ -122,6 +127,7 @@ max-height: fill;
   max-height: fill;
 }
 
+/* Footer text and display adjustments*/
 footer span {
   display: flex;
   justify-content: center;
@@ -151,7 +157,7 @@ footer h4 {
 }
 
 
-footer h5{
+footer h5 {
   display: flex;
   font-size: 20px;
   text-align: end;
@@ -166,6 +172,7 @@ footer h5{
   background-color: var(--dark-blue);
 }
 
+/* Media screen added to make sure website works in all devices*/
 @media screen and (max-width: 992px) {
   .content {
     max-width: 100px;
@@ -174,12 +181,33 @@ footer h5{
 }
 
 @media screen and (max-width: 768px) {
-  main,
+  body{
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
   nav {
+    display: flex;
     flex-direction: column;
   }
+
   header {
-   flex-direction: column;
+    flex-direction: column;
   }
 }
 
+@media screen and (max-width: 375px) {
+  body{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  nav{
+    display: block;
+    flex-wrap: wrap;
+}
+
+header {
+  flex-direction: column;
+}
+}
