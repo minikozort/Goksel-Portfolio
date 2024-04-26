@@ -1,10 +1,11 @@
+/* Commonly used background colors  */
 :root {
   --blue: #79bbf8;
   --dark-blue: #3d5368;
   --beige: #b4aea0;
 
 }
-
+/* Font Family and background color is defined for the whole page  */
 body {
   font-family: Arial, sans-serif, 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif, monospace;
   margin: 0;
@@ -21,7 +22,7 @@ body {
   justify-content: center;
   padding: 2px;
 }
-
+/* Header background and font color is defined  */
 header {
   display: flex;
   justify-content: space-between;
@@ -148,36 +149,22 @@ footer h4 {
   color: #79bbf8;
   font-size: 150%
 }
-footer .Form{
-  display: flex;
-  font-size: 20px;
-  justify-content: end;
-  background-color: aqua;
-  flex-direction: column;
-  align-items: flex-end;
-}
+
 
 footer h5{
-  /* display: flex; */
+  display: flex;
   font-size: 20px;
   text-align: end;
-  /* justify-content: end; */
-  padding-right: 100px;
-  background-color: aqua;
-}
-
-#Contact-me{
-  display: flex;
-}
-
-
-.button{
-  display: flex;
   justify-content: center;
+  background-color: var(--dark-blue);
 }
-/* main .indent-1:target{
-  background-color: #a6a7a8;
-} */
+
+.Contact {
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  background-color: var(--dark-blue);
+}
 
 @media screen and (max-width: 992px) {
   .content {
