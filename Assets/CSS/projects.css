@@ -1,3 +1,126 @@
-body{
-    font-family : "Orbitron"
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Orbitron, Arial, sans-serif, 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif, monospace;
+    margin: 0;
+    background-color: #b4aea0; /* Light beige background */
+}
+
+section {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    background-color: #1d6c8b; /* Dark blue background */
+    color: white;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem; /* Adjust as needed */
+    line-height: 1.6;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+/* Section for projects */
+.indent-2 {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap to new line */
+    justify-content: center;
+    gap: 20px; /* Space between project boxes */
+
+}
+
+/* Individual project box */
+.content {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    padding: 5px;
+    background-color: #1d6c8b; /* White background */
+    border: 1px solid #030101; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    text-align: center;
+}
+
+/* Project link (anchor tag) */
+.project-link {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Inherit text color */
+}
+
+.project-link:hover {
+    transform: translateY(-3px); /* Move up slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+/* Image styles */
+.img2 {
+    width: 100%;
+    height: 80%; /* Adjust initial height as needed */
+    object-fit: contain; /* Ensure the image covers the entire container */
+    border-radius: 6px; /* Rounded corners for image */
+    display: block;
+    margin-bottom: 5px; /* Spacing below image */
+    transition: transform 0.3s ease; /* Transition transform for smooth effect */
+}
+
+.img2:hover {
+    transform: scale(3) translateZ(0); /* Scale up the image on hover */
+}
+
+/* Optional: Zoom-in effect */
+.img2:hover {
+    transform: scale(3) translateZ(0) perspective(1000px) rotateX(0); /* Add perspective and rotation for zoom-in effect */
+}
+
+/* GitHub repository link */
+.github {
+    display: block;
+    text-decoration: none;
+    color: white; /* Link color */
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+.github:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.group-projects {
+    padding: 40px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.group-projects .indent-2 {
+    max-width: 60%;
+    margin: 0 auto; /* Center the section horizontally */
+}
+.group-project-title{
+    font-size: 2rem;
+}
+
+.individual-project-title {
+    font-size: 2rem;
+    text-align: center; /* Center align the title */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+    margin-top: 10px;
+}
+h2 {
+    font-size: 60%; /* Initial font size */
+    margin-bottom: 20px;
+    font-weight:bolder;
 }
