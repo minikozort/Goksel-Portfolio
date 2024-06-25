@@ -6,4 +6,6 @@ I have used HTML schematics to make sure that the website is searchable and user
 
 You can look at this simple website and find out a lot about me and my journey to be able to say "I can code".
 
+Credits: Onurg
+
 ![alt text](<Portfolio Goksel.PNG>)
