@@ -14,7 +14,7 @@ body {
 
 section {
     margin: 0 auto;
-    max-width: 60%;
+    max-width: 95%;
 }
 
 /* Header styles */
@@ -47,8 +47,8 @@ header p {
 
 /* Individual project box */
 .content {
-    width: 200px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
+    width: 300px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
     padding: 5px;
     background-color: #1d6c8b; /* White background */
     border: 1px solid #030101; /* Light gray border */
@@ -106,7 +106,7 @@ header p {
 }
 
 .group-projects .indent-2 {
-    max-width: 60%;
+    max-width: 80%;
     margin: 0 auto; /* Center the section horizontally */
 }
 .group-project-title{
